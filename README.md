@@ -38,7 +38,7 @@ Assistance client :
 ## Acteur principal : Utilisateur
 Description : Les utilisateurs peuvent contacter l'assistance client en cas de problèmes, de questions ou de litiges liés à une commande ou à l'utilisation de la plateform
 
-   figure : diagramme de cas d'utilisation 
+   Trello : https://trello.com/b/RLtIEuLr/mod%C3%A8le-kanban-for-uml
 
 
  
