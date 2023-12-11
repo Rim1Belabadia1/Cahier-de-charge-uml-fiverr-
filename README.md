@@ -99,6 +99,77 @@ Méthodes:
 CreateContracte(): void
 updatestatus(): void
 extenddelivrydate(): void
+Bookmark:
+Attributs:
+BMID: int
+user: User
+gig: Gig_Service
+bookmarkeddate: Date
+Méthodes:
+addbm(): void
+remove(): void
+viewBMGigs(): void
+Analytics:
+Attributs:
+AnalyticsID: int
+user: User
+data: String
+timestamp: DateTime
+Méthodes:
+collectdata(): void
+analyzdata(): void
+generatereport(): void
+LegalDocument:
+Attributs:
+documentid: int
+type: String
+content: String
+user: User
+Méthodes:
+uploaddoc(): void
+viewdoc(): void
+Subscription:
+Attributs:
+subid: int
+user: User
+startdate: Date
+enddate: Date
+Méthodes:
+subscribe(): void
+removesub(): void
+viewubgigs(): void
+Advertisement:
+Attributs:
+adID: int
+content: String
+enddate: Date
+targetaudiance: User
+startdate: Date
+Méthodes:
+createad(): void
+updatead(): void
+analyzAdPreformance(): void
+Event:
+Attributs:
+eventid: int
+name: String
+descrp: String
+date: Date
+location: String
+participants: User
+Méthodes:
+creationevent(): void
+updateevent(): void
+cancelevent(): void
+Badge:
+Attributs:
+badgeID: int
+name: String
+description: String
+users: User
+Méthodes:
+awardbadge(): void
+updatebadgedetails(): void
 
 
    Trello : https://trello.com/b/RLtIEuLr/mod%C3%A8le-kanban-for-uml
