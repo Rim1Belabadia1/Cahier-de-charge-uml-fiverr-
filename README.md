@@ -177,14 +177,91 @@ users: User
 Méthodes:
 awardbadge(): void
 updatebadgedetails(): void
+User
+Attributs :
 
+UserID: int
+Username: string
+Email: string
+Password: string
+Méthodes :
+
+login(email: string, password: string): void
+logout(): void
+Message
+Attributs :
+
+MessageID: int
+Content: string
+Sender: User
+Timestamp: java.util.Date
+Méthodes :
+
+sendMessage(): void
+Gig (Service)
+Attributs :
+
+GigID: int
+Title: string
+Description: string
+Price: float
+Seller: User
+Méthodes :
+
+create(): int
+edit(): void
+delete(): void
+Chat
+Attributs :
+
+ChatID: int
+Participants: List<User>
+Messages: List<Message>
+Méthodes :
+
+addParticipant(): void
+sendMessage(): void
+Skill
+Attributs :
+
+SkillID: int
+Name: string
+Description: string
+Gigs: List<Gig>
+Méthodes :
+
+addSkill(): void
+updateSkillDetails(): void
+Promotion
+Attributs :
+
+PromotionID: int
+DiscountPercentage: float
+StartDate: Date
+EndDate: Date
+ApplicableGigs: List<Gig>
+Méthodes :
+
+applyPromo(): void
+updatePromo(): void
+expirePromo(): void
+Category
+Attributs :
+
+CategoryID: int
+Name: string
+Méthodes :
+
+addCategory(): void
+editCategory(): void
+deleteCategory(): void
 
    Trello : https://trello.com/b/RLtIEuLr/mod%C3%A8le-kanban-for-uml
 
 
  
 
- 
+ **Pour le diagramme de séquence : On a élaboré
  
 Figure : 
 - **UseCase** : Admin.moo / DCUMLD_1.moo
