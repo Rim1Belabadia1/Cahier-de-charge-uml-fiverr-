@@ -82,6 +82,11 @@ Bien sûr, je vais détailler davantage en fournissant des exemples spécifiques
 
  
  
-Figure : diagramme de sequences 
+Figure : **UseCase** : Admin.moo / DCUMLD_1.moo
+         **DDS** : Login : ModeleOrienteObjet1.moo
+         User : ModeleOrienteObjet2.moo
+         Admin :ADINDSQ.moo
+**DDC** : projetuml.moo
+
 
 
