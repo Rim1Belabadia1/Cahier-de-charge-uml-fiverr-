@@ -268,6 +268,24 @@ Le diagramme de classe nous a offert une base solide pour comprendre la structur
 **Enfin, pour le diagramme de séquence "User"**, nous avons analysé les interactions liées aux fonctionnalités principales pour un utilisateur standard, telles que la navigation dans l'interface, la soumission de données, et la réception de résultats ou de confirmations.
 
 La séparation des acteurs dans ces diagrammes de séquence nous a permis d'obtenir une vue claire et détaillée de l'ensemble des tâches impliquées dans chaque scénario. Cela facilite non seulement la compréhension des flux de travail spécifiques à chaque acteur, mais aussi l'identification des points de convergence et d'interaction entre les différents acteurs du système. En fin de compte, cette approche méthodique renforce la qualité de la conception de notre système et facilite le développement futur.
+
+# Diagramme de cas d'utilisation : 
+En alignement avec la méthodologie utilisée pour le diagramme de classe, nous avons étendu cette approche à notre diagramme de cas d'utilisation, garantissant une représentation détaillée et complète des fonctionnalités de notre système. Nous avons segmenté les tâches spécifiques entre les acteurs principaux, aboutissant à la création de deux diagrammes de cas d'utilisation distincts, l'un dédié à l'administrateur (Admin) et l'autre axé sur l'utilisateur standard (User).
+
+Pour le diagramme de cas d'utilisation "Admin", chaque cas a été minutieusement décomposé pour refléter les actions et les interactions spécifiques à l'administrateur. Cela inclut la gestion des utilisateurs, la configuration du système, la surveillance des activités et toute autre fonctionnalité liée à son rôle d'administration. Chaque cas d'utilisation a été détaillé pour comprendre les scénarios associés, les préconditions et les postconditions.
+
+Parallèlement, le diagramme de cas d'utilisation "User" a été élaboré en mettant l'accent sur les tâches et les interactions essentielles pour l'utilisateur standard. Cela comprend la navigation dans l'interface, l'accès aux fonctionnalités principales de l'application, la soumission de données, et la gestion des paramètres individuels. Chaque cas d'utilisation a été détaillé pour assurer une compréhension approfondie des actions spécifiques que l'utilisateur peut entreprendre.
+
+La séparation des tâches entre les acteurs dans ces diagrammes de cas d'utilisation offre une clarté accrue sur les responsabilités distinctes de l'administrateur et de l'utilisateur standard. Cela permet également une identification précise des points de convergence où les actions des deux acteurs peuvent interagir.
+
+Cette approche méthodique renforce la modélisation de notre système, facilitant la communication des exigences fonctionnelles entre les membres de l'équipe de développement et assurant une base solide pour la phase de mise en œuvre. Les diagrammes de cas d'utilisation constituent ainsi un outil puissant pour guider le processus de développement en mettant en évidence les fonctionnalités clés et les interactions au sein de notre système.
+
+
+
+
+
+
+
    Trello : https://trello.com/b/RLtIEuLr/mod%C3%A8le-kanban-for-uml
 
 
