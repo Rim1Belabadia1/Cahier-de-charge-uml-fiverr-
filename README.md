@@ -1,45 +1,80 @@
 
 [Update - 29/10-2023 ]
-# Cahier de Charge : Fiverr 
-Un modèle de cas d'utilisation pour l'application Fiverr pourrait inclure les cas d'utilisation suivants. L'application Fiverr est une plateforme de freelance qui permet aux utilisateurs de proposer, de rechercher et d'acheter des services dans divers domaines. Voici quelques cas d'utilisation typiques :
+Bien sûr, je vais détailler davantage en fournissant des exemples spécifiques de méthodes qui pourraient être implémentées dans chaque diagramme.
 
-## S'inscrire sur Fiverr :
+### Diagramme de Classe
 
-## Acteur principal : Utilisateur
-Description : L'utilisateur crée un compte sur l'application Fiverr en fournissant des informations personnelles, telles que son nom, son adresse e-mail, et en définissant un mot de passe.
-Rechercher des services :
+1. **Méthodes de la classe Utilisateur :**
+   - `modifierProfil(): void`: Permet à un utilisateur de modifier ses informations de profil.
+   - `consulterHistoriqueCommandes(): List<Commande>`: Renvoie la liste des commandes passées par l'utilisateur.
 
+2. **Méthodes de la classe Commande :**
+   - `calculerTotal(): Montant`: Calcule le montant total de la commande en fonction des services sélectionnés.
+   - `changerStatut(nouveauStatut: Statut): void`: Permet de mettre à jour le statut de la commande.
 
-Description : L'utilisateur recherche des services en utilisant des mots-clés, des catégories ou des filtres spécifiques. Il peut parcourir les résultats et consulter les détails des services proposés.
-Commander un service :
+3. **Méthodes de la classe Service :**
+   - `ajouterServiceAuPanier(acheteur: Utilisateur): void`: Ajoute le service au panier de l'acheteur.
+   - `effectuerPaiement(): void`: Gère le processus de paiement du service.
 
+### Diagramme de Séquence
 
-Description : L'acheteur sélectionne un service qui l'intéresse, examine les détails et les tarifs proposés par le vendeur, puis passe une commande. Il peut également discuter avec le vendeur pour clarifier des détails.
-Fournir un service :
+1. **Scénario "Commande d'un Service" :**
+   - `acheteurSelectionneService(service: Service)`: Acheteur sélectionne un service.
+   - `systemeNotifieVendeur(service: Service)`: Le système notifie le vendeur de la commande.
+   - `vendeurAccepteCommande(): void`: Le vendeur accepte la commande.
+   - `acheteurEffectuePaiement(): void`: Acheteur effectue le paiement.
 
+2. **Scénario "Communication Acheteur-Vendeur" :**
+   - `acheteurEnvoieMessage(message: string)`: Acheteur envoie un message au vendeur.
+   - `vendeurRepondMessage(message: string)`: Vendeur répond au message de l'acheteur.
 
-Description : Le vendeur reçoit une commande de la part de l'acheteur, s'engage à fournir le service spécifié dans les délais convenus, et communique avec l'acheteur pour obtenir des informations supplémentaires si nécessaire.
-## Gérer les commandes :
+### Diagramme de Cas d'Utilisation
 
+1. **Cas d'Utilisation "Gérer le Profil Utilisateur" :**
+   - `modifierProfilUtilisateur(): void`: Permet à l'utilisateur de modifier son profil.
+   - `consulterHistoriqueCommandes(): List<Commande>`: Affiche l'historique des commandes de l'utilisateur.
 
-Description : Le vendeur peut gérer ses commandes en cours, les accepter, les refuser, les livrer, et discuter avec les acheteurs pour assurer une communication fluide et s'assurer que les attentes sont satisfaites.
-Paiement et facturation :
+2. **Cas d'Utilisation "Rechercher des Services" :**
+   - `rechercherServices(criteres: CritereRecherche): List<Service>`: Recherche des services en fonction de certains critères.
 
+3. **Cas d'Utilisation "Passer une Commande" :**
+   - `ajouterServiceAuPanier(service: Service): void`: Ajoute un service au panier.
+   - `effectuerPaiement(): void`: Gère le processus de paiement.
 
-Description : Les acheteurs effectuent des paiements pour les services commandés, et les vendeurs reçoivent des paiements pour les services fournis. Fiverr facilite le processus de paiement et propose un suivi de la facturation.
-Gérer le profil :
+### Contraintes et Exigences
 
+1. **Contraintes Techniques :**
+   - `utiliserInfrastructureCloud(): void`: Utilise une infrastructure cloud pour le stockage et le traitement.
 
-Description : Les utilisateurs peuvent mettre à jour leur profil, ajouter des informations sur leurs compétences, télécharger des exemples de travaux antérieurs, et gérer leurs paramètres de confidentialité.
-Donner des avis et des évaluations :
+2. **Exigences Fonctionnelles :**
+   - `filtrerResultatsRecherche(criteres: CritereRecherche): List<Service>`: Filtrer les résultats de recherche en fonction des critères.
 
+3. **Exigences Non Fonctionnelles :**
+   - `gestionUtilisateursSimultanes(nbUtilisateurs: int): boolean`: Le système doit être capable de gérer un certain nombre d'utilisateurs simultanés.
 
-Description : Les acheteurs peuvent laisser des avis et des évaluations sur les services qu'ils ont reçus, tandis que les vendeurs peuvent répondre aux avis reçus. Ces avis sont importants pour la réputation des utilisateurs sur la plateforme.
-Assistance client :
+### Validation et Vérification
 
+1. **Critères de Validation :**
+   - `validationDiagrammeClasse(): boolean`: Les classes représentent-elles correctement les entités du système?
+   - `validationScenariosSequence(): boolean`: Les scénarios de séquence couvrent-ils tous les cas d'utilisation principaux?
 
-Description : Les utilisateurs peuvent contacter l'assistance client en cas de problèmes, de questions ou de litiges liés à une commande ou à l'utilisation de la plateform
+2. **Méthodes de Vérification :**
+   - `revueConceptionPartiesPrenantes(): void`: Revues de conception avec les parties prenantes.
+   - `testsUnitairesClasses(): void`: Tests unitaires pour vérifier le comportement des classes.
 
+### Livrables Attendus
+
+1. **Diagrammes Finaux :**
+   - `genererDiagrammeClasse(): Image`: Génère le diagramme de classe final au format image.
+   - `genererDiagrammeSequence(): Image`: Génère le diagramme de séquence final au format image.
+   - `genererDiagrammeCasUtilisation(): Image`: Génère le diagramme de cas d'utilisation final au format image.
+
+### Calendrier de Livraison
+
+1. **Échéances :**
+   - `livrerDiagrammeClasse(): Date`: Date limite de livraison du diagramme de classe.
+   - `livrerDiagrammeSequence(): Date`: Date limite de livraison du diagramme de séquence.
+   - `livrerDiagrammeCasUtilisation(): Date`: Date limite de livraison du diagramme de cas d'utilisation.
    Trello : https://trello.com/b/RLtIEuLr/mod%C3%A8le-kanban-for-uml
 
 
