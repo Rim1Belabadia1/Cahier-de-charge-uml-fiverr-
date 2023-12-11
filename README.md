@@ -63,14 +63,14 @@ comment: String
 Méthodes:
 addReview(): void
 editReview(): void
-Payement:
 
+Payement:
 Attributs:
 payID: int
 amout: float
 order: Order
-Notification:
 
+Notification:
 Attributs:
 notifID: int
 message: Message
@@ -78,8 +78,8 @@ user: User
 Méthodes:
 sendnotif(): void
 markread(): void
-Invoice:
 
+Invoice:
 Attributs:
 Invoiced: int
 order: Order
@@ -88,8 +88,8 @@ Status: String
 Méthodes:
 GénérateInvoice(): void
 upadate(): void
-Contract:
 
+Contract:
 Attributs:
 Contract id: Int
 order: Order
@@ -99,6 +99,7 @@ Méthodes:
 CreateContracte(): void
 updatestatus(): void
 extenddelivrydate(): void
+
 Bookmark:
 Attributs:
 BMID: int
@@ -109,6 +110,7 @@ Méthodes:
 addbm(): void
 remove(): void
 viewBMGigs(): void
+
 Analytics:
 Attributs:
 AnalyticsID: int
@@ -119,6 +121,7 @@ Méthodes:
 collectdata(): void
 analyzdata(): void
 generatereport(): void
+
 LegalDocument:
 Attributs:
 documentid: int
@@ -128,6 +131,7 @@ user: User
 Méthodes:
 uploaddoc(): void
 viewdoc(): void
+
 Subscription:
 Attributs:
 subid: int
@@ -138,6 +142,7 @@ Méthodes:
 subscribe(): void
 removesub(): void
 viewubgigs(): void
+
 Advertisement:
 Attributs:
 adID: int
@@ -149,6 +154,7 @@ Méthodes:
 createad(): void
 updatead(): void
 analyzAdPreformance(): void
+
 Event:
 Attributs:
 eventid: int
@@ -161,6 +167,7 @@ Méthodes:
 creationevent(): void
 updateevent(): void
 cancelevent(): void
+
 Badge:
 Attributs:
 badgeID: int
